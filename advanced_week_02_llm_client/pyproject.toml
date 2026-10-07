@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "advanced-week-02-llm-client"
+version = "1.0.0"
+description = "Reusable LLM client with typed outputs, retries, fallback and streaming."
+requires-python = ">=3.11"
+dependencies = ["openai", "pydantic>=2,<3", "pydantic-settings"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
